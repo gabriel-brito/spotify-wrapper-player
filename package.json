@@ -12,7 +12,7 @@
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test",
-    "start": "./node_modules/.bin/webpack-dev-server --open --mode development"
+    "start": "./node_modules/.bin/webpack-dev-server --open"
   },
   "nyc": {
     "reporter": [
@@ -41,7 +41,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.24.0",
     "chai": "^3.5.0",
@@ -52,8 +52,8 @@
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1",
-    "webpack": "^4.10.2",
+    "webpack": "^2.6.1",
     "webpack-cli": "^3.0.1",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^2.4.5"
   }
 }
