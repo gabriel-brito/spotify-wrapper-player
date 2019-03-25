@@ -1,8 +1,8 @@
-import spotify from './spotify';
-import renderAlbums from './albumList';
+import searchTrigger from './searchTrigger';
+import selectAlbumTrigger from './selectAlbumTrigger';
+import playlistTrigger from './playlistTrigger';
 
-const albums = spotify.search.albums('Slipknot');
-const albumList = document.getElementById('album-list');
+searchTrigger();
+selectAlbumTrigger();
+playlistTrigger();
 
-albums
-  .then(data => renderAlbums(data.albums.items, albumList));
